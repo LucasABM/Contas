@@ -1,0 +1,2 @@
+language = "bash"
+run = "dotnet run --project UI/UI.csproj"
