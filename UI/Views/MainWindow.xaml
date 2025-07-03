@@ -1,8 +1,12 @@
 <Window x:Class="UI.Views.MainWindow"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-        Title="Financial Admin" Height="300" Width="400">
-    <Grid>
-        <TextBlock Text="Welcome" VerticalAlignment="Center" HorizontalAlignment="Center"/>
-    </Grid>
+        Title="Financial Admin" Height="350" Width="400">
+    <StackPanel Margin="10" VerticalAlignment="Center">
+        <Button Content="Nova Entrada" Margin="0,5" Command="{Binding NovaEntradaCommand}" />
+        <Button Content="Nova Saída" Margin="0,5" Command="{Binding NovaSaidaCommand}" />
+        <Button Content="Nova Transação" Margin="0,5" Command="{Binding NovaTransacaoCommand}" />
+        <Button Content="Fluxo de Caixa Mensal" Margin="0,5" Command="{Binding FluxoMensalCommand}" />
+        <Button Content="Fluxo de Caixa Anual" Margin="0,5" Command="{Binding FluxoAnualCommand}" />
+    </StackPanel>
 </Window>

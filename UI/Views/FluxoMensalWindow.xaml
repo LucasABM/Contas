@@ -1,0 +1,8 @@
+<Window x:Class="UI.Views.FluxoMensalWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Fluxo Mensal" Height="300" Width="400">
+    <Grid Margin="10">
+        <TextBlock Text="Fluxo Mensal" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+    </Grid>
+</Window>
