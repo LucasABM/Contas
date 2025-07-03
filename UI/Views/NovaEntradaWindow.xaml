@@ -1,0 +1,28 @@
+<Window x:Class="UI.Views.NovaEntradaWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Nova Entrada" Height="300" Width="400">
+    <Grid Margin="10">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+
+        <TextBlock Text="Tipo:" />
+        <TextBox Grid.Row="0" Margin="80,0,0,5" Text="{Binding TipoEntrada}" />
+
+        <TextBlock Grid.Row="1" Text="Data:" />
+        <DatePicker Grid.Row="1" Margin="80,0,0,5" SelectedDate="{Binding DataRecebimento}" />
+
+        <TextBlock Grid.Row="2" Text="Valor:" />
+        <TextBox Grid.Row="2" Margin="80,0,0,5" Text="{Binding Valor}" />
+
+        <TextBlock Grid.Row="3" Text="Categoria:" />
+        <TextBox Grid.Row="3" Margin="80,0,0,5" Text="{Binding CategoriaId}" />
+
+        <Button Grid.Row="4" Content="Salvar" HorizontalAlignment="Right" Width="80" Command="{Binding SalvarCommand}" />
+    </Grid>
+</Window>
